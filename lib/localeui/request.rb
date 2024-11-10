@@ -16,7 +16,7 @@ module Localeui
       "#{Localeui.config.api_base}#{endpoit}"
     end
 
-    def header
+    def header # rubocop:disable Metrics/AbcSize
       h = {}
       h['access-token'] = Localeui.config.access_token if Localeui.config.access_token.present?
       h['client'] = Localeui.config.client if Localeui.config.client.present?

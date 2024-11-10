@@ -2,21 +2,24 @@
 
 module Localeui
   class Project
-    def self.list
-      # show assigned all projects
-      puts 'list projects'
-    end
-
-    def self.init
+    def self.init(api_id)
       # init project with project api id
-      puts 'init project'
+      response = Localeui::Http.request(
+        method: :get,
+        endpoint: "projects/#{api_id}"
+      )
+      Localeui.config.project_id = response.data['api_id']
+      response
     end
 
     def self.info
       # show project informations
       raise NoProjectError, 'No project initialised' if Localeui::Config.setup.project_id.nil?
 
-      { foo: 'bar' }
+      Localeui::Http.request(
+        method: :get,
+        endpoint: "projects/#{Localeui.config.project_id}"
+      )
     end
   end
 end

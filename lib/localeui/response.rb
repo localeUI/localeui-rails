@@ -52,7 +52,7 @@ module Localeui
       raise error
     end
 
-    def error_class
+    def error_class # rubocop:disable Metrics/MethodLength
       case @status
       when HTTP_BAD_REQUEST_CODE
         BadRequestError
@@ -63,7 +63,7 @@ module Localeui
       when HTTP_NOT_FOUND_CODE
         NotFoundError
       else
-        ApiError
+        LocaleuiError
       end
     end
   end
