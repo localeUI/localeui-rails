@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/auth/sign_in
+    body:
+      encoding: ASCII-8BIT
+      string: email=valid%40mail.com&password=valid
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Token:
+      - 20MgsWwUuqDIre5C1jF9rA
+      Token-Type:
+      - Bearer
+      Client:
+      - hDZvp_6QwC-cXz4__Eeb6w
+      Expiry:
+      - '1732433348'
+      Uid:
+      - info@cobarian.de
+      Authorization:
+      - Bearer eyJhY2Nlc3MtdG9rZW4iOiIyME1nc1d3VXVxRElyZTVDMWpGOXJBIiwidG9rZW4tdHlwZSI6IkJlYXJlciIsImNsaWVudCI6ImhEWnZwXzZRd0MtY1h6NF9fRWViNnciLCJleHBpcnkiOiIxNzMyNDMzMzQ4IiwidWlkIjoiaW5mb0Bjb2Jhcmlhbi5kZSJ9
+      Etag:
+      - W/"e7e680f32640b1043be6d911fc889a08"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3251d675-880f-47d0-917c-0341775520c5
+      X-Runtime:
+      - '0.740259'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=189.71,
+        instantiation.active_record;dur=0.46, unpermitted_parameters.action_controller;dur=0.04,
+        transaction.active_record;dur=396.89, process_action.action_controller;dur=716.78
+      Connection:
+      - close
+      Content-Length:
+      - '332'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"email":"valid@mail.com","provider":"email","uid":"valid@mail.com","id":"2d166df4-bf7c-4d5d-a5d2-478146a60e4f","name":"Valid
+        Name","language":"en","time_zone":"UTC","stripe_id":"","card_id":"","balance":0,"tax_number":null,"api_id":"usr_cce4aebabb6a81098586"}}'
+  recorded_at: Sun, 10 Nov 2024 07:29:08 GMT
+recorded_with: VCR 6.3.1

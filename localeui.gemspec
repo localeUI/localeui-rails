@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative 'lib/localeui_rails/version'
+require_relative 'lib/localeui/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'localeui_rails'
-  spec.version = LocaleuiRails::VERSION
+  spec.name = 'localeui'
+  spec.version = Localeui::VERSION
   spec.authors = ['Lars Klindwordt']
   spec.email = ['lars.klindwordt@klind.de']
 

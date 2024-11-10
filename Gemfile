@@ -20,4 +20,9 @@ group :development do
 
   gem 'simplecov', '>= 0.15', '< 0.22'
   gem 'vcr', '~> 6.3'
+  gem 'webmock', '~> 3.24'
+end
+
+group :development, :test do
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
