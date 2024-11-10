@@ -14,8 +14,12 @@ jobs:
     strategy:
       matrix:
         ruby:
+<<<<<<< HEAD
           - '3.2.4'
           - '3.3.4'
+=======
+          - '3.3.6'
+>>>>>>> cd09254 (update ruby to 3.3.6 in github flows)
 
     steps:
     - uses: actions/checkout@v4
