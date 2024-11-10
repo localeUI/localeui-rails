@@ -15,11 +15,15 @@ jobs:
       matrix:
         ruby:
 <<<<<<< HEAD
+<<<<<<< HEAD
           - '3.2.4'
           - '3.3.4'
 =======
           - '3.3.6'
 >>>>>>> cd09254 (update ruby to 3.3.6 in github flows)
+=======
+          - '3.3.4'
+>>>>>>> 3ecf507 (implement project methods)
 
     steps:
     - uses: actions/checkout@v4
