@@ -46,10 +46,12 @@ module ActiveSupport
   class TestCase
     setup do
       FileUtils.rm_f("#{Rails.root}/#{Localeui::DEFAULT_CONFIG_FILE}")
+      FileUtils.rm_f("#{Rails.root}/config/localeui.rb")
     end
 
     teardown do
       FileUtils.rm_f("#{Rails.root}/#{Localeui::DEFAULT_CONFIG_FILE}")
+      FileUtils.rm_f("#{Rails.root}/config/localeui.rb")
     end
   end
 end
