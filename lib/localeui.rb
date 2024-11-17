@@ -5,6 +5,7 @@ require 'localeui/version'
 
 # Resources
 require 'localeui/resources/project'
+require 'localeui/resources/source_file'
 require 'localeui/resources/user'
 
 # Supporting classes

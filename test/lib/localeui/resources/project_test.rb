@@ -10,7 +10,6 @@ module Localeui
 
     ## Test Localeui::Project.init
     test 'Localeui::Project.init should not init the project with unknown api_id' do
-      Localeui::User.sign_in('info@cobarian.de', 'kitesurfen')
       VCR.use_cassette 'test_project_init_with_unknown_api_id' do
         assert_raises Localeui::NotFoundError do
           Localeui::Project.init('pro_12345667890')
@@ -35,7 +34,6 @@ module Localeui
     end
 
     test 'Localeui::Project.info should return project informations' do
-      Localeui::User.sign_in('info@cobarian.de', 'kitesurfen')
       Localeui.config.project_id = 'pro_b220f2fa5637fa4c6c74'
       VCR.use_cassette 'test_project_info_with_valid_api_id' do
         response = Localeui::Project.info
