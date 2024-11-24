@@ -9,7 +9,7 @@ The LocaleUI Rails Gem makes the management of multilingual Ruby on Rails applic
 
 ## Requirements
 
-This gem requires Ruby 3.0+ and Rails 7.1+.
+This gem requires Ruby 3.2+ and Rails 7.1+.
 
 ## Installation
 
