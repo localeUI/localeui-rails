@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/projects/pro_b220f2fa5637fa4c6c74
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Access-Token:
+      - eu5DAJvTWuI3OyzGcJXWQA
+      Client:
+      - 5GaC9_9ToeIjQpaV-Vmo_g
+      Uid:
+      - valid@mail.com
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Token:
+      - ''
+      Token-Type:
+      - Bearer
+      Client:
+      - 5GaC9_9ToeIjQpaV-Vmo_g
+      Expiry:
+      - ''
+      Uid:
+      - valid@mail.com
+      Authorization:
+      - Bearer eyJhY2Nlc3MtdG9rZW4iOiJldTVEQUp2VFd1STNPeXpHY0pYV1FBIiwidG9rZW4tdHlwZSI6IkJlYXJlciIsImNsaWVudCI6IjVHYUM5XzlUb2VJalFwYVYtVm1vX2ciLCJleHBpcnkiOiIxNzMyNDQzNjUzIiwidWlkIjoiaW5mb0Bjb2Jhcmlhbi5kZSJ9
+      Etag:
+      - W/"7ae9d59b84a1c8c318d625ba5c8acd9d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _localeui_session=sXhgJKPA13jm0fFBsFdKgo9EJXhqcxjiUAOY30c3tw%2Fn9odUa02zXyFFm3kMrgh4nvaR7%2BKuhGVHJLEHuyGkWSWH0Nrph1fLXPD2T9x5Tlt7%2BiqpunLS7dQ2Fc5GWw%2Fo%2BA4Nda2y9CHI%2FWX%2B39YZrsUjRfVdU7tiGSsUWhc57dqkd%2Bk5qQk0T3fUFYZnxdM7vSdAhed5VrWZeJElGNj0rq8I7f%2B8iMv4fRKf53jnWhwvdsjK0v%2F24G76lAfK4Kw4%2BUL7PW%2Bpjchi%2F91Vfnpal4hfTDx0se9iioHe71YaEhKyc2uTNJea%2BnwCSRooGXdPisl2Nk8WzP8ZUh6Me9BpVpbq%2FAe2O%2BdxyQ%3D%3D--kPGiYG8OSGfGwBt8--wxkN2NVXu1tyuqj6shWy%2Bg%3D%3D;
+        path=/; httponly; samesite=lax
+      X-Request-Id:
+      - e64efe47-fe95-4437-89b8-0cf2e5f927f3
+      X-Runtime:
+      - '0.146265'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=11.18,
+        instantiation.active_record;dur=0.29, render_template.action_view;dur=0.10,
+        transaction.active_record;dur=36.44, process_action.action_controller;dur=125.87
+      Connection:
+      - close
+      Content-Length:
+      - '119'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"api_id":"pro_b220f2fa5637fa4c6c74","name":"localeUI","technology":"ruby","framework":"rails","format":"yml"}}'
+  recorded_at: Sun, 10 Nov 2024 10:20:54 GMT
+recorded_with: VCR 6.3.1

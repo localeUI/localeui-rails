@@ -13,3 +13,7 @@ coverage/*
 test/dummy/tmp/*
 test/dummy/log/*.log
 test/dummy/storage/*.sqlite3
+test/dummy/.byebug_history
+test/dummy/config/localeui.rb
+
+.byebug_history

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/projects/pro_12345667890
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Access-Token:
+      - prriPaa0mHFD60jXUr6GoQ
+      Client:
+      - 5tguag7mWc8KyygZRmF0lA
+      Uid:
+      - valid@mail.com
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _localeui_session=zpKG5HCyXECGwNPjKvjfbnAHFdiNQEIWCY3uqZwyY5XpS1QSaNQMh5%2FIlIkzb5MBH%2BRXNSrdLwm4TREhF%2F4CxdyL5TxTULAwOKMN4gIB63qXNC3egvGNqtt4QWY9xbMBarUfUGCehe58t5kb%2BKx0G0j9grgbykErNEivcuMv645YrryklvQyqoWzsmovjuhA2wwH3Qb32PZ7a6n%2BY8KlGDVTCC4%2BfhMex%2B9T3MerOVKT4NOQ4BU8w5T3u3HDD3mRY%2FspZOawbxlam968aL5V1ACvDYxtVSL%2F2SvLU2%2B%2F%2BZZg3y%2F%2FlUOJQYVKtkH5dB%2FItjar5UoN%2BDZP5gnnnoouBBGAiSDruNAweQ%3D%3D--Wfr7qvj6Hch9aJNt--rdTU%2Bop%2FnuCUxUHPsdT%2Fbw%3D%3D;
+        path=/; httponly; samesite=lax
+      X-Request-Id:
+      - c4a2a389-331a-4603-a207-136a6f0108f0
+      X-Runtime:
+      - '0.107755'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=3.77, instantiation.active_record;dur=0.07,
+        process_action.action_controller;dur=77.90
+      Connection:
+      - close
+      Content-Length:
+      - '172'
+    body:
+      encoding: UTF-8
+      string: '{"error_code":40401,"message":"Cannot find record","detail":"Couldn''t
+        find Project with [WHERE \"project_contributors\".\"user_id\" = $1 AND \"projects\".\"api_id\"
+        = $2]"}'
+  recorded_at: Sun, 10 Nov 2024 10:08:28 GMT
+recorded_with: VCR 6.3.1

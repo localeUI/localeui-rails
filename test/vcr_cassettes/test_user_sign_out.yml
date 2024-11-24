@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/api/v1/auth/sign_out
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Access-Token:
+      - bXA7ls0E9mUu-2TymteYmQ
+      Client:
+      - TkW5tQZc39YO1Mb0qlX9pw
+      Uid:
+      - info@cobarian.de
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Language:
+      - de
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c955e57777ec0d73639dca6748560d00"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _localeui_session=8%2FA3ADwUvLmuv2A8oTghMCP4cKNgKxC2S6cQdXwcsn6ZP5vgEPq5B7dcwU1ogCW3yXkr%2FkpudrOGuFTUAvYCSwF3ls9rLgTe%2Fhl5y892qHzCOz1jDE%2F335wmirGtaBcyagv7OmEpsDjGoiGH%2B2xw9JaOIEgPoN1eva%2FCCdBtIm4hRS6uYssQPF0%3D--n0G%2B%2FEhU34oWzzad--ms%2BjiozKCtIsbiP8qBIxrw%3D%3D;
+        path=/; httponly; samesite=lax
+      X-Request-Id:
+      - 6ebc6f58-58dd-4ca7-b905-c05c0ea69735
+      X-Runtime:
+      - '0.133220'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.02, sql.active_record;dur=9.25, instantiation.active_record;dur=0.11,
+        transaction.active_record;dur=10.69, process_action.action_controller;dur=103.23
+      Connection:
+      - close
+      Content-Length:
+      - '16'
+    body:
+      encoding: UTF-8
+      string: '{"success":true}'
+  recorded_at: Sun, 10 Nov 2024 07:45:32 GMT
+recorded_with: VCR 6.3.1
