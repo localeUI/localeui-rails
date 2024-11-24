@@ -15,6 +15,12 @@ require 'localeui/http'
 require 'localeui/request'
 require 'localeui/response'
 
+# Tasks classes
+require 'localeui/task/base'
+require 'localeui/task/download'
+require 'localeui/task/upload'
+require 'localeui/railtie' if defined?(Rails)
+
 module Localeui
   # API default params
   DEFAULT_API_BASE = 'http://localhost:3000/api/v1/'
