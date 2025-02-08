@@ -23,9 +23,33 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 
-## Usage
+Next, you need to create a config file  for localeui-rails. Run the following command to copy a basic config file.
 
-TODO: Write usage instructions here
+    $ rails g localeui:install
+
+Go to the config file `config/localeui.rb` and add your `api_token` and `project_id`.
+
+```ruby
+Localeui.config do |config|
+  # ...
+  
+  # Authentication Token
+  config.api_token = ENV['LOCALEUID_API_TOKEN']
+
+  # Project API ID
+  config.project_id = ENV['LOCALEUID_PROJECT_ID']
+
+  # ...other options
+end
+```
+
+## Upload Translation Files
+
+    $ rails localeui:upload  
+
+## Download Translation Files
+
+    $ rails localeui:download
 
 ## Development
 

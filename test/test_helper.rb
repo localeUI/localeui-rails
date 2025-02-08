@@ -42,16 +42,25 @@ if ActiveSupport::TestCase.respond_to?(:fixture_paths=)
   ActiveSupport::TestCase.fixtures :all
 end
 
+FileUtils.touch "#{Rails.root}/config/initializers/localeui.rb"
+Rails.application.load_tasks
+
 module ActiveSupport
   class TestCase
     setup do
-      FileUtils.rm_f("#{Rails.root}/#{Localeui::DEFAULT_CONFIG_FILE}")
-      FileUtils.rm_f("#{Rails.root}/config/localeui.rb")
+      remove_config_file
     end
 
     teardown do
-      FileUtils.rm_f("#{Rails.root}/#{Localeui::DEFAULT_CONFIG_FILE}")
-      FileUtils.rm_f("#{Rails.root}/config/localeui.rb")
+      remove_config_file
+    end
+
+    def remove_config_file
+      FileUtils.rm_f(config_file)
+    end
+
+    def config_file
+      "#{Rails.root}/config/initializers/localeui.rb"
     end
   end
 end

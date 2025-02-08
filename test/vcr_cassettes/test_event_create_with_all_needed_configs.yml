@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4/events
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"076ea6f6bf381c04b65343e0d68ce486"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8c1d5d8f-9d34-4578-b265-392d4148a5a1
+      X-Runtime:
+      - '0.083575'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=42.56,
+        instantiation.active_record;dur=0.30, transaction.active_record;dur=49.94,
+        render_template.action_view;dur=0.12, process_action.action_controller;dur=61.97
+      Connection:
+      - close
+      Content-Length:
+      - '66'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"api_id":"evt_0c5af364962072d04d63","kind":"api_upload"}}'
+  recorded_at: Sat, 08 Feb 2025 20:25:01 GMT
+recorded_with: VCR 6.3.1

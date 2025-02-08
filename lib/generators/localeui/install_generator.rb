@@ -9,7 +9,7 @@ module Localeui
 
       desc 'Creates a LocaleUI config file.'
       def copy_config
-        template 'localeui_config.rb', "#{Rails.root}/config/localeui.rb"
+        template 'localeui_config.rb', "#{Rails.root}/config/initializers/localeui.rb"
       end
     end
   end

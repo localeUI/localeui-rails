@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 require 'rake'
-require "#{Rails.root}/config/localeui"
+require 'localeui'
+require "#{Localeui::Utils.root}/config/initializers/localeui"
 
 namespace :localeui do
   desc 'Upload all translation source files to localeUI'

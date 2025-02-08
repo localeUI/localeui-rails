@@ -12,17 +12,16 @@ module Localeui
 
     private
 
-    def url(endpoit)
-      "#{Localeui.config.api_base}#{endpoit}"
+    def url(endpoint)
+      raise NoBaseApiError, 'No api url set' if Localeui.base_api.nil? || Localeui.base_api.empty?
+
+      "#{Localeui.base_api}#{endpoint}"
     end
 
-    def header # rubocop:disable Metrics/AbcSize
-      h = {}
-      h['access-token'] = Localeui.config.access_token if Localeui.config.access_token.present?
-      h['client'] = Localeui.config.client if Localeui.config.client.present?
-      h['uid'] = Localeui.config.uid if Localeui.config.uid
+    def header
+      raise NoApiTokenError, 'No api token set' if Localeui.api_token.nil? || Localeui.api_token.empty?
 
-      h
+      { Authorization: "Bearer #{Localeui.api_token}" }
     end
   end
 end

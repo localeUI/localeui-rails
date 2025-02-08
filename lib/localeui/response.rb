@@ -13,7 +13,6 @@ module Localeui
       @response = response
       init_header
       init_body
-      fetch_tokens
       identifiy_errors
     end
 
@@ -37,14 +36,6 @@ module Localeui
       return nil if successful?
 
       raise_error
-    end
-
-    def fetch_tokens # rubocop:disable Metrics/AbcSize
-      Localeui.config.access_token = @headers['access-token'] if @headers['access-token'].present?
-      if @headers['client'].present? && Localeui.config.client != @headers['client']
-        Localeui.config.client = @headers['client']
-      end
-      Localeui.config.uid = @headers['uid'] if @headers['uid'].present? && Localeui.config.uid != @headers['uid']
     end
 
     def raise_error

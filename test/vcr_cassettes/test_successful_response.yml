@@ -1,12 +1,14 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://localhost:3000/api/v1/auth/sign_in
+    method: get
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4
     body:
       encoding: ASCII-8BIT
-      string: email=foo%40bar.de&password=foopw
+      string: ''
     headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
       Connection:
       - close
       Content-Type:
@@ -17,8 +19,8 @@ http_interactions:
       - http.rb/5.2.0
   response:
     status:
-      code: 401
-      message: Unauthorized
+      code: 200
+      message: OK
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -30,25 +32,25 @@ http_interactions:
       - none
       Referrer-Policy:
       - strict-origin-when-cross-origin
-      Content-Language:
-      - en
       Content-Type:
       - application/json; charset=utf-8
+      Etag:
+      - W/"f3a742d8e86c1180d8cbed573099cc0d"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5b298652-5e2c-4a2a-951a-7977b39c5f9d
+      - 4e707ab8-18f9-4e45-9272-43853f091a37
       X-Runtime:
-      - '0.026964'
+      - '0.084816'
       Server-Timing:
-      - start_processing.action_controller;dur=0.01, unpermitted_parameters.action_controller;dur=0.01,
-        sql.active_record;dur=0.22, instantiation.active_record;dur=0.03, process_action.action_controller;dur=3.57
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=8.74, instantiation.active_record;dur=0.20,
+        render_template.action_view;dur=0.17, process_action.action_controller;dur=61.79
       Connection:
       - close
       Content-Length:
-      - '75'
+      - '118'
     body:
       encoding: UTF-8
-      string: '{"success":false,"errors":["Invalid login credentials. Please try again."]}'
-  recorded_at: Sun, 10 Nov 2024 07:15:46 GMT
+      string: '{"data":{"api_id":"pro_0b4f5add7890f17a6da4","name":"Test 2 ","technology":"ruby","framework":"rails","format":"yml"}}'
+  recorded_at: Sat, 08 Feb 2025 21:13:09 GMT
 recorded_with: VCR 6.3.1

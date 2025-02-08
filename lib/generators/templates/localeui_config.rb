@@ -12,4 +12,10 @@ Localeui.config do |config|
 
   # Project API ID
   config.project_id = ''
+
+  # Path of the translation files
+  config.locales_path = "#{Rails.root}/config/locales"
+
+  # Allow automatic overwriting of the translation files
+  config.allow_overwriting = false
 end

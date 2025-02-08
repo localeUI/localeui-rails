@@ -4,7 +4,7 @@ module Localeui
   module Task
     class Download < Base
       class << self
-        def download
+        def download!
           $stdout.print 'Task complete!'
           true
         end

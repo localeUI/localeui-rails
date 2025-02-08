@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4/events
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c8030379bb3d05bad20da59149842aa5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aea806de-e9bf-40fa-8edb-93f41d8ae478
+      X-Runtime:
+      - '0.115535'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=21.07,
+        instantiation.active_record;dur=0.40, transaction.active_record;dur=17.83,
+        render_template.action_view;dur=0.12, process_action.action_controller;dur=91.06
+      Connection:
+      - close
+      Content-Length:
+      - '66'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"api_id":"evt_046193191090b87598ae","kind":"api_upload"}}'
+  recorded_at: Sat, 08 Feb 2025 22:00:05 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4/source_files/upload
+    body:
+      encoding: ASCII-8BIT
+      string: "-----------------------6df18d0ea397bcc94278e505bb72b8e964cf402044\r\nContent-Disposition:
+        form-data; name=\"filename\"\r\n\r\nen.yml\r\n-----------------------6df18d0ea397bcc94278e505bb72b8e964cf402044\r\nContent-Disposition:
+        form-data; name=\"event_id\"\r\n\r\nevt_046193191090b87598ae\r\n-----------------------6df18d0ea397bcc94278e505bb72b8e964cf402044\r\nContent-Disposition:
+        form-data; name=\"file\"; filename=\"en.yml\"\r\nContent-Type: application/yaml\r\n\r\n#
+        Files in the config/locales directory are used for internationalization and\n#
+        are automatically loaded by Rails. If you want to use locales other than\n#
+        English, add the necessary files in this directory.\n#\n# To use the locales,
+        use `I18n.t`:\n#\n#     I18n.t \"hello\"\n#\n# In views, this is aliased to
+        just `t`:\n#\n#     <%= t(\"hello\") %>\n#\n# To use a different locale, set
+        it with `I18n.locale`:\n#\n#     I18n.locale = :es\n#\n# This would use the
+        information in config/locales/es.yml.\n#\n# To learn more about the API, please
+        read the Rails Internationalization guide\n# at https://guides.rubyonrails.org/i18n.html.\n#\n#
+        Be aware that YAML interprets the following case-insensitive strings as\n#
+        booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings\n#
+        must be quoted to be interpreted as strings. For example:\n#\n#     en:\n#
+        \      \"yes\": yup\n#       enabled: \"ON\"\n\nen:\n  hello: \"Hello world\"\n\r\n-----------------------6df18d0ea397bcc94278e505bb72b8e964cf402044--\r\n"
+    headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
+      Connection:
+      - close
+      Content-Type:
+      - multipart/form-data; boundary=---------------------6df18d0ea397bcc94278e505bb72b8e964cf402044
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0e482d14dfdeaa11a25bd31cef800e82"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9c0bcd98-e527-467b-9cff-a93fdaffb752
+      X-Runtime:
+      - '0.200391'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=90.30,
+        instantiation.active_record;dur=1.51, enqueue.active_job;dur=0.56, transaction.active_record;dur=119.87,
+        service_upload.active_storage;dur=1.04, render_partial.action_view;dur=21.19,
+        broadcast.action_cable;dur=1.49, render_template.action_view;dur=0.35, process_action.action_controller;dur=177.00
+      Connection:
+      - close
+      Content-Length:
+      - '185'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"api_id":"fil_31bc91683f9dd46b1be9","name":"%{locale}.yml","project_id":"pro_0b4f5add7890f17a6da4","last_version":{"id":"fiv_7a6f4512d845080c1209","number":15,"upload":"api"}}}'
+  recorded_at: Sat, 08 Feb 2025 22:00:05 GMT
+recorded_with: VCR 6.3.1
