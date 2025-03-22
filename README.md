@@ -27,7 +27,7 @@ Next, you need to create a config file  for localeui-rails. Run the following co
 
     $ rails g localeui:install
 
-Go to the config file `config/localeui.rb` and add your `api_token` and `project_id`.
+Go to the config file `config/initializers/localeui.rb` and add your `api_token` and `project_id`.
 
 ```ruby
 Localeui.config do |config|

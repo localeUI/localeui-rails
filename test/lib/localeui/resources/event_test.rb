@@ -15,7 +15,7 @@ module Localeui
       VCR.use_cassette 'test_event_create_with_all_needed_configs' do
         response = Localeui::Event.create
         assert response.successful?
-        assert_equal('evt_0c5af364962072d04d63', response.data['api_id'])
+        assert_equal('evt_0c5af364962072d04d63', response.body['api_id'])
       end
     end
 

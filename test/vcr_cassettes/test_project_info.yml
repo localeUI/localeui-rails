@@ -52,6 +52,6 @@ http_interactions:
       - '118'
     body:
       encoding: UTF-8
-      string: '{"data":{"api_id":"pro_0b4f5add7890f17a6da4","name":"Test 2 ","technology":"ruby","framework":"rails","format":"yml"}}'
+      string: '{"api_id":"pro_0b4f5add7890f17a6da4","name":"Test 2 ","technology":"ruby","framework":"rails","format":"yml"}'
   recorded_at: Sat, 08 Feb 2025 21:52:48 GMT
 recorded_with: VCR 6.3.1

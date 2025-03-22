@@ -4,6 +4,7 @@ module Localeui
   class Response
     module StatusCodes
       HTTP_OK_CODE = 200
+      HTTP_CREATED_CODE = 201
       HTTP_BAD_REQUEST_CODE = 400
       HTTP_UNAUTHORIZED_CODE = 401
       HTTP_FORBIDDEN_CODE = 403

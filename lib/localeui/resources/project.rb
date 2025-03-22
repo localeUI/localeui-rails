@@ -10,7 +10,7 @@ module Localeui
         method: :get,
         endpoint: "projects/#{Localeui.project_id}"
       )
-      Localeui::Utils.logger.info "Project '#{response.data['api_id']}' informations were successfully requested"
+      Localeui::Utils.logger.info "Project '#{response.body['api_id']}' informations were successfully requested"
       response
     end
   end

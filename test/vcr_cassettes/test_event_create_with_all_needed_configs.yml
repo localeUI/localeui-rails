@@ -52,6 +52,6 @@ http_interactions:
       - '66'
     body:
       encoding: UTF-8
-      string: '{"data":{"api_id":"evt_0c5af364962072d04d63","kind":"api_upload"}}'
+      string: '{"api_id":"evt_0c5af364962072d04d63","kind":"api_upload"}'
   recorded_at: Sat, 08 Feb 2025 20:25:01 GMT
 recorded_with: VCR 6.3.1

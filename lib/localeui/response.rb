@@ -6,7 +6,7 @@ module Localeui
   class Response
     include StatusCodes
 
-    attr_reader :request, :response, :headers, :status, :body, :data
+    attr_reader :request, :response, :headers, :status, :body
 
     def initialize(request, response)
       @request = request
@@ -17,7 +17,7 @@ module Localeui
     end
 
     def successful?
-      @status == HTTP_OK_CODE
+      [HTTP_OK_CODE, HTTP_CREATED_CODE].include?(@status)
     end
 
     private
@@ -29,7 +29,6 @@ module Localeui
 
     def init_body
       @body = JSON.parse(@response.body)
-      @data = @body['data'] if @body.key?('data')
     end
 
     def identifiy_errors

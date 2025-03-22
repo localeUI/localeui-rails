@@ -9,7 +9,7 @@ module Localeui
         method: :post,
         endpoint: "projects/#{Localeui.project_id}/events"
       )
-      Localeui::Utils.logger.info "Event '#{response.data['api_id']}' was successfully created"
+      Localeui::Utils.logger.info "Event '#{response.body['api_id']}' was successfully created"
       response
     end
   end

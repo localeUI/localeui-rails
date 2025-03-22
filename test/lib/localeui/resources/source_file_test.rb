@@ -8,14 +8,15 @@ module Localeui
       Localeui.base_api = 'http://localhost:3000/api/v1/'
       Localeui.project_id = 'pro_0b4f5add7890f17a6da4'
       Localeui.api_token = 'a17d532ade27819fc54641fc86298614'
+      Localeui.locales_path = "#{Rails.root}/config/locales"
     end
 
     # Test Localeui::SourceFile.upload
     test 'Localeui::SourceFile.upload should create event and upload file' do
       VCR.use_cassette 'test_source_file_upload' do
         response = Localeui::SourceFile.upload
-        assert_equal('evt_046193191090b87598ae', response[:event])
-        assert_equal(1, response[:files])
+        assert_equal('evt_4ed6f501af27baa50a2a', response[:event])
+        assert_equal(3, response[:files])
       end
     end
 

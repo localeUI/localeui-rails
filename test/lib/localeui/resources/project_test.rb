@@ -15,7 +15,7 @@ module Localeui
       VCR.use_cassette 'test_project_info' do
         response = Localeui::Project.info
         assert response.successful?
-        assert_equal('pro_0b4f5add7890f17a6da4', response.data['api_id'])
+        assert_equal('pro_0b4f5add7890f17a6da4', response.body['api_id'])
       end
     end
 

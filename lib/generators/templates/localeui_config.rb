@@ -15,7 +15,4 @@ Localeui.config do |config|
 
   # Path of the translation files
   config.locales_path = "#{Rails.root}/config/locales"
-
-  # Allow automatic overwriting of the translation files
-  config.allow_overwriting = false
 end
