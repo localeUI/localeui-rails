@@ -3,9 +3,9 @@
 ![Gem Version](https://img.shields.io/gem/v/localeui-rails)
 ![CI Status](https://github.com/localeUI/localeui-rails/actions/workflows/main.yml/badge.svg)
 
-The LocaleUIRails Gem is a Ruby on Rails application gem that provides developers with a seamless way to manage and synchronise translation files with LocaleUI.com. By integrating the Gem into the Rails application, translations can be automatically synchronised, updated and deployed directly to LocaleUI without manually uploading or copying language files.
+The LocaleUI-Rails Gem is a Ruby on Rails application gem that provides developers with a seamless way to manage and synchronise translation files with LocaleUI.com. By integrating the Gem into the Rails application, translations can be automatically synchronised, updated and deployed directly to LocaleUI without manually uploading or copying language files.
 
-The LocaleUI Rails Gem makes the management of multilingual Ruby on Rails applications uncomplicated and automated - ideal for companies that want to offer their Ruby on Rails application in different languages.
+The LocaleUI-Rails Gem makes the management of multilingual Ruby on Rails applications uncomplicated and automated - ideal for companies that want to offer their Ruby on Rails application in different languages.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 
-Next, you need to create a config file  for localeui-rails. Run the following command to copy a basic config file.
+Next, you need to create a config file for localeui-rails. Run the following command to copy a basic config file.
 
     $ rails g localeui:install
 
