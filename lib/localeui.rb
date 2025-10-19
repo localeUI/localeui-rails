@@ -18,6 +18,7 @@ require 'localeui/utils'
 # Tasks classes
 require 'localeui/task/base'
 require 'localeui/task/download'
+require 'localeui/task/project_info'
 require 'localeui/task/upload'
 require 'localeui/railtie' if defined?(Rails)
 

@@ -9,6 +9,11 @@ namespace :localeui do
     Localeui::Task::Upload.upload!
   end
 
+  desc 'Display project information from localeUI'
+  task project_info: :environment do
+    Localeui::Task::ProjectInfo.project_info!
+  end
+
   desc 'Download all translation source files to localeUI'
   task download: :environment do
     Localeui::Task::Download.download!

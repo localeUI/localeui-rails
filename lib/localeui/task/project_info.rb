@@ -5,7 +5,9 @@ module Localeui
     class ProjectInfo < Base
       class << self
         def project_info!
-          Localeui::Project.info
+          response = Localeui::Project.info
+          pp response.body
+          true
         end
       end
     end
