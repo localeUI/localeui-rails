@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'LocaleUI Gem for Ruby on Rails applications'
   spec.description = 'This gem allows to integrate LocaleUI to your locale Ruby on Rails application'
-  spec.homepage = 'https://localeui.com/'
+  spec.homepage = 'https://localeui.com/en/docs/rails_gem/get-started'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.0.0'
 
