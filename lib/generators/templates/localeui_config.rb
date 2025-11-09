@@ -12,4 +12,7 @@ Localeui.config do |config|
 
   # Project API ID
   config.project_id = ''
+
+  # Path of the translation files
+  config.locales_path = "#{Rails.root}/config/locales"
 end

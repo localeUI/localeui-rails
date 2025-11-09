@@ -4,8 +4,9 @@ module Localeui
   module Task
     class Download < Base
       class << self
-        def download
-          $stdout.print 'Task complete!'
+        def download!
+          Localeui::SourceFile.download
+          Localeui::Utils.logger.info 'Task complete!'
           true
         end
       end

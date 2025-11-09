@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f3a742d8e86c1180d8cbed573099cc0d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2da6fc0f-4c2d-47de-a3d9-91c2601284ae
+      X-Runtime:
+      - '0.087155'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=10.41,
+        instantiation.active_record;dur=0.20, render_template.action_view;dur=0.13,
+        process_action.action_controller;dur=63.93
+      Connection:
+      - close
+      Content-Length:
+      - '118'
+    body:
+      encoding: UTF-8
+      string: '{"api_id":"pro_0b4f5add7890f17a6da4","name":"Test 2 ","technology":"ruby","framework":"rails","format":"yml"}'
+  recorded_at: Sat, 08 Feb 2025 21:52:48 GMT
+recorded_with: VCR 6.3.1

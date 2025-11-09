@@ -1,0 +1,166 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4/source_files
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bcd74f40eecbe9e5d4cabb09dd54a060"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c97435df-fdcb-4ca7-bb28-f0b25acbf9d1
+      X-Runtime:
+      - '0.092068'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=2.10, instantiation.active_record;dur=0.37,
+        render_collection.action_view;dur=3.33, render_template.action_view;dur=13.52,
+        process_action.action_controller;dur=34.91
+      Connection:
+      - close
+      Content-Length:
+      - '71'
+    body:
+      encoding: UTF-8
+      string: '[{"api_id":"fil_31bc91683f9dd46b1be9","name":"%{locale}.yml","keys":1}]'
+  recorded_at: Sat, 22 Mar 2025 19:35:00 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4/locales
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a34285f31d5ee3300a8ae9dec923dc19"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a5e522f1-456d-4904-85c7-2af2c8c2ff37
+      X-Runtime:
+      - '0.051782'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=1.36, instantiation.active_record;dur=0.35,
+        render_collection.action_view;dur=3.07, render_template.action_view;dur=5.43,
+        process_action.action_controller;dur=13.05
+      Connection:
+      - close
+      Content-Length:
+      - '131'
+    body:
+      encoding: UTF-8
+      string: '[{"api_id":"loc_262f852d0fd8c1bb078c","name":"Englisch","code":"en","main":true,"country":{"alpha2":"gb","name":"United
+        Kingdom"}}]'
+  recorded_at: Sat, 22 Mar 2025 19:35:00 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/projects/pro_0b4f5add7890f17a6da4/source_files/fil_31bc91683f9dd46b1be9?locale_id=loc_262f852d0fd8c1bb078c
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Authorization:
+      - Bearer a17d532ade27819fc54641fc86298614
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - localhost:3000
+      User-Agent:
+      - http.rb/5.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ac59a4c4dfb0e5c3ad99d9572525a713"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5e103c18-486b-4d3f-9a00-5ef377140b85
+      X-Runtime:
+      - '0.046416'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=3.74, instantiation.active_record;dur=0.93,
+        render_template.action_view;dur=1.15, process_action.action_controller;dur=23.59
+      Connection:
+      - close
+      Content-Length:
+      - '103'
+    body:
+      encoding: UTF-8
+      string: '{"api_id":"fil_31bc91683f9dd46b1be9","name":"en.yml","keys":1,"content":{"en":{"hello":"Hello
+        world"}}}'
+  recorded_at: Sat, 22 Mar 2025 19:35:00 GMT
+recorded_with: VCR 6.3.1

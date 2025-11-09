@@ -5,7 +5,8 @@ module Localeui
     class Upload < Base
       class << self
         def upload!
-          $stdout.print 'Task complete!'
+          Localeui::SourceFile.upload
+          Localeui::Utils.logger.info 'Task complete!'
           true
         end
       end

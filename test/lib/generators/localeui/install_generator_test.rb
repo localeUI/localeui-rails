@@ -8,8 +8,9 @@ module Localeui
     class InstallGeneratorTest < ActiveSupport::TestCase
       ## Test Localeui::Generators::InstallGenerator
       test 'Localeui::Generators::InstallGenerator should create a config file' do
+        remove_config_file
         Localeui::Generators::InstallGenerator.start
-        assert File.file?("#{Rails.root}/config/localeui.rb")
+        assert File.file?(config_file)
       end
     end
   end
