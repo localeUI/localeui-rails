@@ -55,6 +55,22 @@ Run tests with in the terminal
 
     $ bin/test
 
+## Release
+
+1. Bump the version in `lib/localeui/version.rb` and update `CHANGELOG.md`.
+
+2. Commit and create a git tag for the release:
+
+    $ git add lib/localeui/version.rb CHANGELOG.md
+    $ git commit -m "Release vX.Y.Z"
+    $ git tag vX.Y.Z
+    $ git push origin main --tags
+
+3. Build and publish the gem to RubyGems:
+
+    $ gem build localeui.gemspec
+    $ gem push localeui-X.Y.Z.gem
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/localeUI/localeui_rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/localeUI/localeui-rails/blob/main/CODE_OF_CONDUCT.md).
