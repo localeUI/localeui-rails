@@ -1,6 +1,6 @@
 # LocaleUIRails
 
-![Gem Version](https://img.shields.io/gem/v/localeui-rails)
+![Gem Version](https://img.shields.io/gem/v/localeui)
 ![CI Status](https://github.com/localeUI/localeui-rails/actions/workflows/main.yml/badge.svg)
 
 The LocaleUI-Rails Gem is a Ruby on Rails application gem that provides developers with a seamless way to manage and synchronise translation files with LocaleUI.com. By integrating the Gem into the Rails application, translations can be automatically synchronised, updated and deployed directly to LocaleUI without manually uploading or copying language files.
