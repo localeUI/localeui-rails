@@ -92,8 +92,9 @@ module Localeui
     end
 
     def self.all
-      files = Dir.glob("#{Localeui.locales_path}/**/*").select { |file| File.file?(file) }
-      files.map { |file| file[Rails.root.join('config/locales/').to_s.length..] }
+      Dir.glob("#{Localeui.locales_path}/**/*")
+         .select { |path| File.file?(path) }
+         .map { |path| path.delete_prefix("#{Localeui.locales_path}/") }
     end
   end
 end

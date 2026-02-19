@@ -8,7 +8,7 @@ class LocaleuiTest < ActiveSupport::TestCase
   end
 
   test 'check version' do
-    assert_equal('0.1.0', Localeui::VERSION)
+    assert_equal('0.1.1', Localeui::VERSION)
   end
 
   test 'provides config options' do
