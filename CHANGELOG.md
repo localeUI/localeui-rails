@@ -18,6 +18,13 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ### Security
 
+## [0.1.2] - 2026-02-19
+
+### Changed
+
+- Refactored source file discovery in `Localeui::SourceFile.all` to support nested paths under `Localeui.locales_path`.
+- Source file names are now derived relative to `Localeui.locales_path` using prefix removal, instead of relying on a hardcoded `config/locales/` root.
+
 ## [0.1.1] - 2026-02-18
 
 ### Changed
